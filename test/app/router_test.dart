@@ -6,11 +6,7 @@ import 'package:medialog_admin/features/home/presentation/home_page.dart';
 
 void main() {
   testWidgets('initial route opens HomePage', (tester) async {
-    await tester.pumpWidget(
-      const ProviderScope(
-        child: MedialogAdminApp(),
-      ),
-    );
+    await tester.pumpWidget(const ProviderScope(child: MedialogAdminApp()));
 
     await tester.pumpAndSettle();
 

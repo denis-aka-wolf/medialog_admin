@@ -6,16 +6,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Medialog Admin'),
-      ),
+      appBar: AppBar(title: const Text('Medialog Admin')),
       body: const Center(
         child: Text(
           'Medialog Admin',
-          style: TextStyle(
-            fontSize: 28,
-            fontWeight: FontWeight.bold,
-          ),
+          style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
         ),
       ),
     );

@@ -4,10 +4,5 @@ import '../features/home/presentation/home_page.dart';
 
 final GoRouter appRouter = GoRouter(
   initialLocation: '/',
-  routes: [
-    GoRoute(
-      path: '/',
-      builder: (context, state) => const HomePage(),
-    ),
-  ],
+  routes: [GoRoute(path: '/', builder: (context, state) => const HomePage())],
 );

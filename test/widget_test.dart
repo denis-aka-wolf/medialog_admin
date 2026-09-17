@@ -5,11 +5,7 @@ import 'package:medialog_admin/app/app.dart';
 
 void main() {
   testWidgets('application starts successfully', (tester) async {
-    await tester.pumpWidget(
-      const ProviderScope(
-        child: MedialogAdminApp(),
-      ),
-    );
+    await tester.pumpWidget(const ProviderScope(child: MedialogAdminApp()));
 
     await tester.pumpAndSettle();
 
