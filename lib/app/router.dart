@@ -1,8 +1,13 @@
 import 'package:go_router/go_router.dart';
 
-import '../features/home/presentation/home_page.dart';
+import '../features/database_connection/presentation/connection_page.dart';
 
 final GoRouter appRouter = GoRouter(
-  initialLocation: '/',
-  routes: [GoRoute(path: '/', builder: (context, state) => const HomePage())],
+  initialLocation: '/database-connection',
+  routes: [
+    GoRoute(
+      path: '/database-connection',
+      builder: (context, state) => const ConnectionPage(),
+    ),
+  ],
 );
